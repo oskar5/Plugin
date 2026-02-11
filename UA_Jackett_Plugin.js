@@ -3,8 +3,8 @@
 
     function UA_Jackett_Plugin() {
         // === НАЛАШТУВАННЯ ===
-        var JACKETT_URL = 'http://192.168.0.177:9117'; // Вкажіть IP вашого ПК з Jackett
-        var API_KEY = 'jynd7o1gh3gyh23ksyvhvswnqc4qn409';             // Вставте ваш API Key з налаштувань Jackett
+        var JACKETT_URL = ''; // Вкажіть IP вашого ПК з Jackett
+        var API_KEY = '';             // Вставте ваш API Key з налаштувань Jackett
         // ====================
 
         Lampa.Listener.follow('full', function (e) {
@@ -71,4 +71,5 @@
             if (e.type == 'ready') UA_Jackett_Plugin();
         });
     }
+
 })();
